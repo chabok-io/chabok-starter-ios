@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushClientManagerDelegate
     var window: UIWindow?
     var manager = PushClientManager.default()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         manager?.addDelegate(self) //Optional
         manager?.logLevel = ChabokLogLevelVerbose //Optional
