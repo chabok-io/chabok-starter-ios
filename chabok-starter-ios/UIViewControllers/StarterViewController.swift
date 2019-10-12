@@ -37,7 +37,7 @@ class StarterViewController: UIViewController, PushClientManagerDelegate {
         let userId = self.userIdUITextField.text?.trimmingCharacters(in: .whitespaces)
         
         if (userId?.count)! > 0 {
-            self.manager?.registerUser(userId, registrationHandler: { (isRegistered, userId, error) in
+            self.manager?.login(userId, handler: { (isRegistered, error) in
                 if (error != nil) {
                     self.showErrorAlert(message: "Could not register user for reason \(String(describing: error))")
                 }
@@ -48,7 +48,7 @@ class StarterViewController: UIViewController, PushClientManagerDelegate {
     }
     
     @IBAction func unregisterButtonTapped(_ sender: Any) {
-        self.manager?.unregisterUser()
+        self.manager?.logout()
         self.userIdUITextField.text = ""
     }
     
@@ -168,16 +168,12 @@ class StarterViewController: UIViewController, PushClientManagerDelegate {
     }
     
     @IBAction func setUserInfoButtonTapped(_ sender: Any) {
-        
-        
-        
-        PushClientManager.default()?.registerUser("USER_ID", registrationHandler: { (register, userId, error) in
-            
-            if register {
-                PushClientManager.default()?.userAttributes = ["firstName": "Behrad",
-                                          "lastName" : "Zari",
-                                          "age"      : 35,
-                                          "gender"   : "Male"]
+        manager?.login("USER_ID", handler: { (isRegistered, error) in
+            if isRegistered {
+                manager?.userAttributes = ["firstName": "Behrad",
+                                           "lastName" : "Zari",
+                                           "age"      : 35,
+                                           "gender"   : "Male"]
             }
         })
     }
