@@ -15,13 +15,14 @@ import AudioToolbox
 class AppDelegate: UIResponder, UIApplicationDelegate, PushClientManagerDelegate {
 
     var window: UIWindow?
-    var manager: PushClientManager?
+    var manager = PushClientManager.default()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        manager = PushClientManager.default()
-        manager?.addDelegate(self)
+        
+        manager?.addDelegate(self) //Optional
+        manager?.logLevel = ChabokLogLevelVerbose //Optional
+        
         manager?.configureEnvironment(.Sandbox)
-        manager?.setEnableRealtime(true)
         
         return true
     }
@@ -40,9 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushClientManagerDelegate
 
     func pushClientManagerDidReceivedMessage(_ message: PushClientMessage!) {
         // Called When PushClientManager has been received new message from server
-        if message.senderId != self.manager?.userId {
-            AudioServicesPlayAlertSound(1009)
-        }
+        print("Got message \(String(describing: message.toDict()))")
     }
     
     //MARK : Push Notification
