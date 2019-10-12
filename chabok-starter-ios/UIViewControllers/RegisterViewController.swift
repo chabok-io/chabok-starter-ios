@@ -14,10 +14,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var UserIdTextField: UITextField!
     var manager = PushClientManager.default()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func registerBtnClick(_ sender: UIButton) {
         let userId: String = UserIdTextField.text!
         

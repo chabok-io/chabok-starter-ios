@@ -168,14 +168,10 @@ class StarterViewController: UIViewController, PushClientManagerDelegate {
     }
     
     @IBAction func setUserInfoButtonTapped(_ sender: Any) {
-        manager?.login("USER_ID", handler: { (isRegistered, error) in
-            if isRegistered {
-                manager?.userAttributes = ["firstName": "Behrad",
-                                           "lastName" : "Zari",
-                                           "age"      : 35,
-                                           "gender"   : "Male"]
-            }
-        })
+        self.manager?.userAttributes = ["firstName": "Behrad",
+                                        "lastName" : "Zari",
+                                        "age"      : 35,
+                                        "gender"   : "Male"]
     }
     
     // MARK: - Chabok delegate methods
