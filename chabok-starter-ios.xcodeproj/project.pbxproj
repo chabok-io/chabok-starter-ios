@@ -10,9 +10,7 @@
 		144E6BAC2D04E4528097566F /* Pods_chabok_starter_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A0EF88BB9E68766621C01E /* Pods_chabok_starter_ios.framework */; };
 		2744793A235204DA00D2F7BA /* Chabok.sandbox.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27447939235204DA00D2F7BA /* Chabok.sandbox.plist */; };
 		3F2821D5F9B5A9664885273F /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16451BC15CC21FB8BB29D34E /* Pods_NotificationService.framework */; };
-		C55785D61FA9B75D00930488 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55785D51FA9B75D00930488 /* RegisterViewController.swift */; };
 		C5A18E411FA89B1F005BDDF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A18E401FA89B1F005BDDF6 /* AppDelegate.swift */; };
-		C5A18E431FA89B1F005BDDF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A18E421FA89B1F005BDDF6 /* ViewController.swift */; };
 		C5A18E461FA89B1F005BDDF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A18E441FA89B1F005BDDF6 /* Main.storyboard */; };
 		C5A18E481FA89B1F005BDDF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A18E471FA89B1F005BDDF6 /* Assets.xcassets */; };
 		C5A18E4B1FA89B1F005BDDF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A18E491FA89B1F005BDDF6 /* LaunchScreen.storyboard */; };
@@ -56,10 +54,8 @@
 		77A832EDEF4A99C6AFA88735 /* Pods_ChabokTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChabokTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AADE9FC6CD9250D87FC967 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		B6BA4BFE9D22CF8E23FD71EF /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
-		C55785D51FA9B75D00930488 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C5A18E3D1FA89B1F005BDDF6 /* chabok-starter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chabok-starter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A18E401FA89B1F005BDDF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5A18E421FA89B1F005BDDF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5A18E451FA89B1F005BDDF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5A18E471FA89B1F005BDDF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5A18E4A1FA89B1F005BDDF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -185,8 +181,6 @@
 		E63177A6215A6670009CB050 /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C55785D51FA9B75D00930488 /* RegisterViewController.swift */,
-				C5A18E421FA89B1F005BDDF6 /* ViewController.swift */,
 				E63177A7215A6698009CB050 /* StarterViewController.swift */,
 			);
 			path = UIViewControllers;
@@ -353,8 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C55785D61FA9B75D00930488 /* RegisterViewController.swift in Sources */,
-				C5A18E431FA89B1F005BDDF6 /* ViewController.swift in Sources */,
 				E63177AF215A674E009CB050 /* CircleUIView.swift in Sources */,
 				C5A18E411FA89B1F005BDDF6 /* AppDelegate.swift in Sources */,
 				E63177A8215A6698009CB050 /* StarterViewController.swift in Sources */,
