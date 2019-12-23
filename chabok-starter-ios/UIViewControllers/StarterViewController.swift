@@ -22,6 +22,8 @@ class StarterViewController: UIViewController, PushClientManagerDelegate {
     @IBOutlet weak var connectionStatusUIView: CircleUIView!
     @IBOutlet weak var messageUserIdUITextField: UITextField!
     @IBOutlet weak var messageChannelUITextField: UITextField!
+    @IBOutlet weak var attrKeyUITextField: UITextField!
+    @IBOutlet weak var attrValueUITextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -172,6 +174,18 @@ class StarterViewController: UIViewController, PushClientManagerDelegate {
                                         "lastName" : "Zari",
                                         "age"      : 35,
                                         "gender"   : "Male"]
+    }
+    
+    @IBAction func unsetAttributeButtonTapped(_ sender: Any) {
+        self.manager?.unsetUserAttribute(attrKeyUITextField.text!)
+    }
+    
+    @IBAction func addToAttributeArrayButtonTapped(_ sender: Any) {
+        self.manager?.add(toUserAttributeArray: attrKeyUITextField.text!, attributeValue: attrValueUITextField.text!)
+    }
+    
+    @IBAction func removeFromAttributeArrayButtonTapped(_ sender: Any) {
+        self.manager?.remove(fromUserAttributeArray: attrKeyUITextField.text!, attributeValue: attrValueUITextField.text!)
     }
     
     // MARK: - Chabok delegate methods
