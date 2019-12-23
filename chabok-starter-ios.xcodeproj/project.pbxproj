@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		144E6BAC2D04E4528097566F /* Pods_chabok_starter_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A0EF88BB9E68766621C01E /* Pods_chabok_starter_ios.framework */; };
 		2744793A235204DA00D2F7BA /* Chabok.sandbox.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27447939235204DA00D2F7BA /* Chabok.sandbox.plist */; };
+		27BBFE8A2353032F00ED2294 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27BBFE892353032F00ED2294 /* GoogleService-Info.plist */; };
+		27BBFE9223530E5000ED2294 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BBFE9123530E5000ED2294 /* NotificationService.swift */; };
+		27BBFE9623530E5000ED2294 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27BBFE8F23530E5000ED2294 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3F2821D5F9B5A9664885273F /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16451BC15CC21FB8BB29D34E /* Pods_NotificationService.framework */; };
+		595499F3B470EF2009DA8CD5 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F30E1E863F13D88B3362D7 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		C5A18E411FA89B1F005BDDF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A18E401FA89B1F005BDDF6 /* AppDelegate.swift */; };
 		C5A18E461FA89B1F005BDDF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A18E441FA89B1F005BDDF6 /* Main.storyboard */; };
 		C5A18E481FA89B1F005BDDF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A18E471FA89B1F005BDDF6 /* Assets.xcassets */; };
@@ -22,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		27BBFE9423530E5000ED2294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5A18E351FA89B1F005BDDF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27BBFE8E23530E5000ED2294;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 		E625F8E320D7EF6B00C56408 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5A18E351FA89B1F005BDDF6 /* Project object */;
@@ -38,6 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				27BBFE9623530E5000ED2294 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
 				E625F8E520D7EF6B00C56408 /* NotificationService.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -49,10 +61,17 @@
 		0934E47427E2F366CD6763B7 /* Pods_ChabokTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChabokTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16451BC15CC21FB8BB29D34E /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27447939235204DA00D2F7BA /* Chabok.sandbox.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Chabok.sandbox.plist; sourceTree = "<group>"; };
+		27BBFE892353032F00ED2294 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27BBFE8F23530E5000ED2294 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		27BBFE9123530E5000ED2294 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		27BBFE9323530E5000ED2294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D62B0E273516EE1B766C14C /* Pods-chabok-starter-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chabok-starter-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chabok-starter-ios/Pods-chabok-starter-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		47C4547B2C17DE5D38160534 /* Pods_ChabokTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChabokTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D10501B31BE713E6BD67E5B /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		77A832EDEF4A99C6AFA88735 /* Pods_ChabokTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChabokTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AADE9FC6CD9250D87FC967 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		9C5160ABA055CD0A93B72EB6 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		A7F30E1E863F13D88B3362D7 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BA4BFE9D22CF8E23FD71EF /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
 		C5A18E3D1FA89B1F005BDDF6 /* chabok-starter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chabok-starter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A18E401FA89B1F005BDDF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +92,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		27BBFE8C23530E5000ED2294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595499F3B470EF2009DA8CD5 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5A18E3A1FA89B1F005BDDF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27BBFE9023530E5000ED2294 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				27BBFE9123530E5000ED2294 /* NotificationService.swift */,
+				27BBFE9323530E5000ED2294 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		BDEF68756B18E182E96749CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +136,7 @@
 				77A832EDEF4A99C6AFA88735 /* Pods_ChabokTestUITests.framework */,
 				16451BC15CC21FB8BB29D34E /* Pods_NotificationService.framework */,
 				D0A0EF88BB9E68766621C01E /* Pods_chabok_starter_ios.framework */,
+				A7F30E1E863F13D88B3362D7 /* Pods_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,9 +144,9 @@
 		C5A18E341FA89B1F005BDDF6 = {
 			isa = PBXGroup;
 			children = (
-				27447939235204DA00D2F7BA /* Chabok.sandbox.plist */,
 				C5A18E3F1FA89B1F005BDDF6 /* chabok-starter-ios */,
 				E625F8DE20D7EF6B00C56408 /* NotificationService */,
+				27BBFE9023530E5000ED2294 /* OneSignalNotificationServiceExtension */,
 				C5A18E3E1FA89B1F005BDDF6 /* Products */,
 				E00EDE23FAF6D4AEE7C2425F /* Pods */,
 				BDEF68756B18E182E96749CD /* Frameworks */,
@@ -121,6 +158,7 @@
 			children = (
 				C5A18E3D1FA89B1F005BDDF6 /* chabok-starter-ios.app */,
 				E625F8DD20D7EF6B00C56408 /* NotificationService.appex */,
+				27BBFE8F23530E5000ED2294 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +174,8 @@
 				C5A18E471FA89B1F005BDDF6 /* Assets.xcassets */,
 				C5A18E491FA89B1F005BDDF6 /* LaunchScreen.storyboard */,
 				C5A18E4C1FA89B1F005BDDF6 /* Info.plist */,
+				27447939235204DA00D2F7BA /* Chabok.sandbox.plist */,
+				27BBFE892353032F00ED2294 /* GoogleService-Info.plist */,
 			);
 			path = "chabok-starter-ios";
 			sourceTree = "<group>";
@@ -147,6 +187,8 @@
 				B6BA4BFE9D22CF8E23FD71EF /* Pods-NotificationService.release.xcconfig */,
 				2D62B0E273516EE1B766C14C /* Pods-chabok-starter-ios.debug.xcconfig */,
 				FB8D523C1EEEE28AAD99FF13 /* Pods-chabok-starter-ios.release.xcconfig */,
+				9C5160ABA055CD0A93B72EB6 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				4D10501B31BE713E6BD67E5B /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -197,6 +239,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		27BBFE8E23530E5000ED2294 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27BBFE9723530E5000ED2294 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				4EF77BA43112461FB45D539F /* [CP] Check Pods Manifest.lock */,
+				27BBFE8B23530E5000ED2294 /* Sources */,
+				27BBFE8C23530E5000ED2294 /* Frameworks */,
+				27BBFE8D23530E5000ED2294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 27BBFE8F23530E5000ED2294 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C5A18E3C1FA89B1F005BDDF6 /* chabok-starter-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5A18E651FA89B1F005BDDF6 /* Build configuration list for PBXNativeTarget "chabok-starter-ios" */;
@@ -206,11 +266,13 @@
 				C5A18E3A1FA89B1F005BDDF6 /* Frameworks */,
 				C5A18E3B1FA89B1F005BDDF6 /* Resources */,
 				E625F8E920D7EF6C00C56408 /* Embed App Extensions */,
+				C777F64C06BCEC6BD47C7461 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E625F8E420D7EF6B00C56408 /* PBXTargetDependency */,
+				27BBFE9523530E5000ED2294 /* PBXTargetDependency */,
 			);
 			name = "chabok-starter-ios";
 			productName = ChabokTest;
@@ -241,10 +303,14 @@
 		C5A18E351FA89B1F005BDDF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Chabok Realtime Solutions";
 				TargetAttributes = {
+					27BBFE8E23530E5000ED2294 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					C5A18E3C1FA89B1F005BDDF6 = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 1100;
@@ -279,17 +345,26 @@
 			targets = (
 				C5A18E3C1FA89B1F005BDDF6 /* chabok-starter-ios */,
 				E625F8DC20D7EF6B00C56408 /* NotificationService */,
+				27BBFE8E23530E5000ED2294 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		27BBFE8D23530E5000ED2294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5A18E3B1FA89B1F005BDDF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C5A18E4B1FA89B1F005BDDF6 /* LaunchScreen.storyboard in Resources */,
 				C5A18E481FA89B1F005BDDF6 /* Assets.xcassets in Resources */,
+				27BBFE8A2353032F00ED2294 /* GoogleService-Info.plist in Resources */,
 				C5A18E461FA89B1F005BDDF6 /* Main.storyboard in Resources */,
 				2744793A235204DA00D2F7BA /* Chabok.sandbox.plist in Resources */,
 			);
@@ -323,6 +398,52 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4EF77BA43112461FB45D539F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C777F64C06BCEC6BD47C7461 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chabok-starter-ios/Pods-chabok-starter-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chabok-starter-ios/Pods-chabok-starter-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DEA099A561318C02400A4CE2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +465,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		27BBFE8B23530E5000ED2294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27BBFE9223530E5000ED2294 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5A18E391FA89B1F005BDDF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +495,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		27BBFE9523530E5000ED2294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27BBFE8E23530E5000ED2294 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 27BBFE9423530E5000ED2294 /* PBXContainerItemProxy */;
+		};
 		E625F8E420D7EF6B00C56408 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E625F8DC20D7EF6B00C56408 /* NotificationService */;
@@ -393,6 +527,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		27BBFE9823530E5000ED2294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5160ABA055CD0A93B72EB6 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38N987U6D9;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adpdigital.Chabok.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27BBFE9923530E5000ED2294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D10501B31BE713E6BD67E5B /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38N987U6D9;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adpdigital.Chabok.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C5A18E631FA89B1F005BDDF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -508,6 +685,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D62B0E273516EE1B766C14C /* Pods-chabok-starter-ios.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "chabok-starter-ios/chabok-starter-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +707,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB8D523C1EEEE28AAD99FF13 /* Pods-chabok-starter-ios.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "chabok-starter-ios/chabok-starter-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +765,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		27BBFE9723530E5000ED2294 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27BBFE9823530E5000ED2294 /* Debug */,
+				27BBFE9923530E5000ED2294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C5A18E381FA89B1F005BDDF6 /* Build configuration list for PBXProject "chabok-starter-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
