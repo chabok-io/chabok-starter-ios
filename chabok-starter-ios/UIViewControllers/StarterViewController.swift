@@ -22,6 +22,8 @@ class StarterViewController: UIViewController, PushClientManagerDelegate {
     @IBOutlet weak var connectionStatusUIView: CircleUIView!
     @IBOutlet weak var messageUserIdUITextField: UITextField!
     @IBOutlet weak var messageChannelUITextField: UITextField!
+    @IBOutlet weak var attrKeyUITextField: UITextField!
+    @IBOutlet weak var attrValueUITextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -152,26 +154,58 @@ class StarterViewController: UIViewController, PushClientManagerDelegate {
     // MARK: - Track Section -- UIButton delegate methods
 
     @IBAction func addToCartButtonTapped(_ sender: Any) {
-        self.manager?.track("AddToCart", data: ["value":50000])
+        let time = Datetime.init()
+        
+        self.manager?.track("AddToCart", data: ["value":50000, "actionTime":time])
     }
     
     @IBAction func purchaseButtonTapped(_ sender: Any) {
-        self.manager?.trackPurchase("Purchase", chabokEvent: ChabokEvent.init(revenue: 2000, currency: "RIAL"))
+        let time = Datetime.init()
+        let event = ChabokEvent.init(revenue: 2000, currency: "RIAL")!
+        
+        event.data = ["actionTime": time]
+
+        self.manager?.trackPurchase("Purchase", chabokEvent: event)
     }
     
     @IBAction func likeButtonTapped(_ sender: Any) {
-        self.manager?.track("Like", data: ["postId":54321])
+        let time = Datetime.init()
+
+        self.manager?.track("Like", data: ["postId": 54321, "isFriend": true, "actionTime": time])
     }
     
     @IBAction func commentButtonTapped(_ sender: Any) {
-        self.manager?.track("Comment", data: ["postId":543214])
+        let time = Datetime.init()
+
+        self.manager?.track("Comment", data: ["postId": 5432144, "isFriend": true, "actionTime": time])
     }
     
     @IBAction func setUserInfoButtonTapped(_ sender: Any) {
         self.manager?.userAttributes = ["firstName": "Behrad",
                                         "lastName" : "Zari",
                                         "age"      : 35,
+                                        "married"  : true,
+                                        "childeren":
+                                            ["Farid",
+                                             "Farnood",
+                                             "Farshad",
+                                             "Faramarz",
+                                             "Faeze",
+                                             "Fateme"],
+                                        "birthday": Datetime(),
                                         "gender"   : "Male"]
+    }
+    
+    @IBAction func unsetAttributeButtonTapped(_ sender: Any) {
+        self.manager?.unsetUserAttribute(attrKeyUITextField.text!)
+    }
+    
+    @IBAction func addToAttributeArrayButtonTapped(_ sender: Any) {
+        self.manager?.add(toUserAttributeArray: attrKeyUITextField.text!, attributeValue: attrValueUITextField.text!)
+    }
+    
+    @IBAction func removeFromAttributeArrayButtonTapped(_ sender: Any) {
+        self.manager?.remove(fromUserAttributeArray: attrKeyUITextField.text!, attributeValue: attrValueUITextField.text!)
     }
     
     // MARK: - Chabok delegate methods
